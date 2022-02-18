@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+*, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:  100%;
+	text-align: center;
+	padding: 100px 0px;
+}
+p {
+	font-size: 16px;
+    line-height: 26px;
+
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+}
+.ava-img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
