@@ -97,6 +97,8 @@ p {
 }
 .ava-img {
 	border-radius: 50% 50% 0 0;
+	-webkit-border-radius: 50% 50% 0 0;
+  -moz-border-radius: 50% 50% 0 0;
 	margin: 50px;
 	max-height: 80vh;
 }
