@@ -75,6 +75,7 @@ p {
 
 /*ABOUT ME SECTION*/
 .about-me {
+	padding-top: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -117,13 +118,12 @@ p {
 }
 .steps {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-
-
 }
-.steps img {
-	width: 30%;
+.steps-img {
+	margin-left: 100px;
+	max-width: 30%;
 }
 ol {
 	background-color: #F1EDE5;
@@ -131,12 +131,14 @@ ol {
   counter-reset: my-awesome-counter;
   border-radius: 50%;
 
+
 }
 ol li {
   counter-increment: my-awesome-counter;
   display: flex;
   margin-bottom: 0.5rem;
   align-items: center;
+  text-align: left;
 
 }
 ol li::before {
@@ -202,3 +204,13 @@ ol li::before {
 	opacity: 0.8;
 }
 
+@media only screen and (max-width: 769px){
+	.about-me-details {
+		flex-direction: column;
+	}
+	.steps {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+}

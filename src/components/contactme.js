@@ -1,7 +1,6 @@
 
 import * as React from 'react'
 import "../styles/index.css"
-import { StaticImage } from 'gatsby-plugin-image'
 
 
 const ContactMe = () => {

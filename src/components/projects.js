@@ -74,14 +74,3 @@ const Projects = () => {
 // Step 3: Export your component
 export default Projects
 
-// {images.map(image => 
-//           
-//           (<GatsbyImage 
-//           image={image.node.childImageSharp.gatsbyImageData} 
-//           className="singleimage" 
-//           object-fit= 'contain'
-//           imgStyle  = {{padding: '10px', objectFit: 'contain'}}
-//           />
-          
-//         )
-//         )}

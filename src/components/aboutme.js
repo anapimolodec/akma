@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const AboutMe = () => {
   return (
     <section className="about-me" id="about-me">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <div className="about-me-details">
           <StaticImage
             alt="Akmaral avatar photo"
