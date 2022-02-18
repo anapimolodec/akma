@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
 *, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 18px;
+}
+body {
+	font-size: 18px;
+}
+nav {
+	position: sticky;
+	top:  0;
+	background-color: white;
+	z-index: 10;
 }
 main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width:  100%;
 	text-align: center;
-	padding: 100px 0px;
 }
+section {
+	width: 100%;
+}
+
 p {
 	font-size: 16px;
     line-height: 26px;
@@ -21,8 +34,169 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Playfair Display', serif;
 }
-.ava-img {
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+h1 {
+	font-size: 2em;
 }
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1em;
+}
+h5 {
+	font-size: 0.8em;
+}
+h5 {
+	font-size: 0.7em;
+}
+p {
+	font-size: 1.1em;
+}
+
+.pt {
+	padding-top: 50px;
+}
+/*NAVIGATION SECTION*/
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+.nav a {
+	text-decoration: none;
+	color: black;
+}
+
+/*ABOUT ME SECTION*/
+.about-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.about-me-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+
+}
+.about-me-text{
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	text-align: left;
+
+}
+.ava-img {
+	border-radius: 50% 50% 0 0;
+	margin: 50px;
+	max-height: 80vh;
+}
+
+#about-me {
+	background-image: url("https://images.squarespace-cdn.com/content/v1/60050e752f57da1e2e70a918/1614324895441-8UAJRXAE2WA1S6USNMZA/CJADE-Creative-Header_Background_Home.jpg?format=1000w");
+	object-position: 50% 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*STEPS SECTION*/
+#steps {
+	padding: 100px 0;
+}
+.steps {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+
+}
+.steps img {
+	width: 30%;
+}
+ol {
+	background-color: #F1EDE5;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  border-radius: 50%;
+
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  margin-bottom: 0.5rem;
+  align-items: center;
+
+}
+ol li::before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  margin-right: 0.5rem;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+/*CONTACT ME SECTION*/
+#contactme {
+	background-color: #F0A682 ;
+	padding: 4vw 0;
+}
+
+#contactme a {
+	text-decoration: none;
+	color: white;
+	/*font-style: italic;*/
+	font-weight: 300;
+}
+
+/*GALLERY SECTION */
+#projects {
+ 	padding: 0;
+ 	padding-top: 100px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ }
+#projects .title {
+	margin: 50px 0;
+}
+.gallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.g1 {
+	display: flex;
+	flex-direction: column;
+	max-height: 700vw;
+}
+.g2 {
+	display: flex;
+	flex-direction: column;
+	max-height: 700vw;
+}
+
+.singleimage {
+	max-width: 35vw;	
+	overflow: hidden;
+	transition: transform 1.5s ease-in-out;
+}
+.singleimage-inner {
+	transition: transform 2s ease-in-out;
+}
+
+.singleimage:hover {
+	opacity: 0.8;
+}
+
