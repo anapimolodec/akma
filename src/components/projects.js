@@ -1,7 +1,7 @@
 
 import * as React from 'react'
 import "../styles/index.css"
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import {useStaticQuery, graphql} from 'gatsby'
 
 const Projects = () => {
@@ -15,7 +15,6 @@ const Projects = () => {
             childImageSharp {
               gatsbyImageData
             }
-            relativePath
             relativeDirectory
           }
         }
@@ -24,18 +23,19 @@ const Projects = () => {
   const {
     allFile: { edges: images },
   } = useStaticQuery(allImagesQuery)
-  console.log(images)
   let g1 = []
   let g2 =[]
   images.map(image => {
           let dir = image.node.relativeDirectory;
-          if (dir == "1" || dir == 1) {
+          if (dir === "1" || dir === 1) {
               g1.push(image)
                 
             }
           else {
               g2.push(image)
-          }});
+          }
+          return;
+        });
 
   return (
     <section id="projects">

@@ -126,6 +126,7 @@ p {
 	max-width: 30%;
 }
 ol {
+	margin: 50px;
 	background-color: #F1EDE5;
   list-style: none;
   counter-reset: my-awesome-counter;
@@ -203,14 +204,54 @@ ol li::before {
 .singleimage:hover {
 	opacity: 0.8;
 }
-
+/*FOOTER SECTION*/
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+.footer h5 {
+	font-style: italic;
+}
+.footer div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 50px;
+}
+.footer a {
+	text-decoration: none;
+	color: black;
+}
+/*RESPONSIVE DESIGN*/
 @media only screen and (max-width: 769px){
 	.about-me-details {
 		flex-direction: column;
 	}
 	.steps {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
+	.steps-img {
+	margin: 0;
+	margin-top: 50px;
+	max-width: 30%;
+}
+}
+@media only screen and (max-width:600px){
+	.gallery {
+	flex-direction: column;
+	align-items: center;
+	}
+	.g1, .g2 {
+		max-height: fit-content;
+	}
+	.singleimage {
+		max-width: 80vw;
+	}
+	
 }

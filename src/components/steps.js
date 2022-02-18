@@ -1,9 +1,9 @@
 
 import * as React from 'react'
 import "../styles/index.css"
-import { StaticImage } from 'gatsby-plugin-image'
-
+import camera from "../assets/camera.svg";
 const Steps = () => {
+
   return (
     <section id="steps">
       <h2> How do we work? </h2>
@@ -18,9 +18,8 @@ const Steps = () => {
           <li> Исходники и Обработанные фото скидываю через неделю. </li>
         </ol>
         
-        <StaticImage
-            alt="camera photo"
-            src="../assets/camera.svg"
+        <img alt="camera"
+            src={camera}
             className="steps-img"            
           />
       </div>

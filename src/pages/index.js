@@ -5,6 +5,7 @@ import Nav from '../components/nav.js'
 import Steps from '../components/steps.js'
 import ContactMe from '../components/contactme.js'
 import Projects from '../components/projects.js'
+import Footer from '../components/footer.js'
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
         <ContactMe />
         <Projects />
       </main>
+      <Footer />
     </div>
   )
 }
