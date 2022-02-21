@@ -250,6 +250,9 @@ ol li::before {
 	overflow: hidden;
 	transition: transform 1.5s ease-in-out;
 }
+#figures .singleimage {
+	max-width: 50vw;	
+}
 .singleimage-inner {
 	transition: transform 2s ease-in-out;
 }
@@ -305,6 +308,12 @@ a:focus:after {
 }
 
 /*RESPONSIVE DESIGN*/
+@media only screen and (max-width: 834px){
+	.ava-img {
+		max-height: 60vh;
+	}
+
+}
 @media only screen and (max-width: 769px){
 	.about-me-details {
 		flex-direction: column;
@@ -319,6 +328,7 @@ a:focus:after {
 	margin-top: 50px;
 	max-width: 30%;
 }
+	
 }
 @media only screen and (max-width:600px){
 	.gallery {
@@ -331,6 +341,9 @@ a:focus:after {
 	.singleimage {
 		max-width: 80vw;
 	}
+	#figures .singleimage {
+	max-width: 80vw;	
+}
 	.mywork .cards {
 		flex-direction: column;
 	}
