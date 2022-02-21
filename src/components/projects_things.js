@@ -2,17 +2,17 @@
 import * as React from 'react'
 import "../styles/index.css"
 import { GatsbyImage } from 'gatsby-plugin-image'
+import {useStaticQuery, graphql} from 'gatsby'
 
-
-const Projects = ({g1, g2}) => {
+const ProjectsThings = ({f1,f2}) => {
 
   return (
-    <section id="projects">
-      <h3 className="title"> Фотосессии с героями </h3>
+    <section id="figures">
+      <h3 className="title"> Предметные фотосессии </h3>
       <div className="gallery-wrapper">
         <div className="gallery">
           <div className="g1">
-            {g1.map(image => (
+            {f1.map(image => (
               <GatsbyImage 
              image={image.node.childImageSharp.gatsbyImageData} 
              className="singleimage" 
@@ -23,7 +23,7 @@ const Projects = ({g1, g2}) => {
             )}
           </div>
           <div className="g2">
-            {g2.map(image => (
+            {f2.map(image => (
               <GatsbyImage 
              image={image.node.childImageSharp.gatsbyImageData} 
              className="singleimage" 
@@ -41,5 +41,5 @@ const Projects = ({g1, g2}) => {
 }
 
 // Step 3: Export your component
-export default Projects
+export default ProjectsThings
 

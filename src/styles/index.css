@@ -69,7 +69,7 @@ p {
 	padding: 10px;
 }
 .nav a {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: black;
 }
 
@@ -155,15 +155,61 @@ ol li::before {
 #contactme {
 	background-color: #F0A682 ;
 	padding: 4vw 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#contactme p {
+	color:  white;
 }
 
 #contactme a {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: white;
 	/*font-style: italic;*/
 	font-weight: 300;
 }
 
+#contactme button {
+	background-color: white;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  margin-top: 50px;
+  border: 0px;
+	padding: 15px 18px;
+	padding-bottom: 18px;
+}
+#contactme button a {
+	color:   #F0A682;
+}
+
+/* MYWORK SECTION */
+
+.mywork {
+	padding: 0;
+ 	padding-top: 100px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+}
+
+.mywork a {
+	/*text-decoration: none;*/
+	color:  black;
+}
+.mywork .cards {
+	display: flex;
+	flex-direction: row;
+}
+.mywork .card {
+	background-color: #F1EDE5;
+	border-radius: 8px;
+	margin: 50px;
+	padding: 15px 18px;
+	padding-bottom: 18px;
+}
 /*GALLERY SECTION */
 #projects {
  	padding: 0;
@@ -172,7 +218,14 @@ ol li::before {
  	flex-direction: column;
  	justify-content: center;
  }
-#projects .title {
+ #figures  {
+ 	padding: 0;
+ 	padding-top: 100px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ }
+.title {
 	margin: 50px 0;
 }
 .gallery {
@@ -211,9 +264,7 @@ ol li::before {
 	align-items: center;
 	padding: 10px;
 }
-.footer h5 {
-	font-style: italic;
-}
+
 .footer div {
 	display: flex;
 	flex-direction: row;
@@ -223,9 +274,36 @@ ol li::before {
 	padding-bottom: 50px;
 }
 .footer a {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: black;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+}
+/* Fade in */
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.3em;
+  background-color: #F0A682;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover:after,
+a:focus:after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
 /*RESPONSIVE DESIGN*/
 @media only screen and (max-width: 769px){
 	.about-me-details {
@@ -253,5 +331,7 @@ ol li::before {
 	.singleimage {
 		max-width: 80vw;
 	}
-	
+	.mywork .cards {
+		flex-direction: column;
+	}
 }

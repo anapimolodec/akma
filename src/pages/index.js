@@ -4,9 +4,15 @@ import AboutMe from '../components/aboutme.js'
 import Nav from '../components/nav.js'
 import Steps from '../components/steps.js'
 import ContactMe from '../components/contactme.js'
-import Projects from '../components/projects.js'
+
 import Footer from '../components/footer.js'
+import MyWork from '../components/mywork.js'
+
+
+
 export default function Home() {
+  
+
   return (
     <div>
       <Nav />
@@ -14,7 +20,8 @@ export default function Home() {
         <AboutMe/>
         <Steps />
         <ContactMe />
-        <Projects />
+        <MyWork />
+        
       </main>
       <Footer />
     </div>
